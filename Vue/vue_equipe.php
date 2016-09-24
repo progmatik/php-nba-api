@@ -47,15 +47,15 @@ class VueEquipe {
 
 
             $renderhtml .= '<tr draggable="true" class="testcla"  onclick="recoi_equipe(' . $idteam . ')" style="' . $style . '">' .
-            '<td style="border:none;text-align: center;width:5%">' . $classement . '</td>' .
-            '<td style="border:none;text-align: center;width:5%" class="logoeq"><img src="../logo/' . $logo . $ext.'" alt="" style="height:20px;"/></td>' .
-            '<td class="posclass" style="border:none;text-align: center;width:10%;color:' . $couleurclass . '">' . $article->getNom() . '</td>' . // nom de l'equipe
-            '<td style="border:none;text-align: center;width:10%">' . $article->getNbrMatchJoue() . '</td>' . //Nombre de matchs joué
-            '<td style="border:none;text-align: center;width:10%">' . $article->getNbrMatchGagne() . '</td>' . //Nombre de matchs gagné
-            '<td style="border:none;text-align: center;width:10%">' . $article->getNbrMatchPerdu() . '</td>' . //Nombre de matchs perdu
-            '<td style="border:none;text-align: center;width:10%">' . $article->getPourcentVictoire() . '</td>' . //Pourcentage de victoire
-            '<td style="border:none;text-align: center;width:10%">' . $article->getResultMatchDom() . '</td>' . //Résultats Match à domicile
-            '<td style="border:none;text-align: center;width:10%">' . $article->getResultMatchExt() . '</td>' . //Résultats Matchs Exterieur
+            '<td style="border:none;width:5%">' . $classement . '</td>' .
+            '<td style="width:5%" class="logoeq"><img src="../logo/' . $logo . $ext.'" alt="" style="height:20px;"/></td>' .
+            '<td class="posclass" style="width:10%;color:' . $couleurclass . '">' . $article->getNom() . '</td>' . // nom de l'equipe
+            '<td style="width:10%">' . $article->getNbrMatchJoue() . '</td>' . //Nombre de matchs joué
+            '<td style="width:10%">' . $article->getNbrMatchGagne() . '</td>' . //Nombre de matchs gagné
+            '<td style="width:10%">' . $article->getNbrMatchPerdu() . '</td>' . //Nombre de matchs perdu
+            '<td style="width:10%">' . $article->getPourcentVictoire() . '</td>' . //Pourcentage de victoire
+            '<td style="width:10%">' . $article->getResultMatchDom() . '</td>' . //Résultats Match à domicile
+            '<td style="width:10%">' . $article->getResultMatchExt() . '</td>' . //Résultats Matchs Exterieur
             '</tr>'; // nombre match joué
             
             $i++;

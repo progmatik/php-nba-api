@@ -191,7 +191,8 @@ function recoi_equipe(idequipe){
         }
     };
     if (document.getElementById('info2')!== null){
-        
+                         // joueur.scrollIntoView();
+
            document.getElementById('info2').innerHTML = '<div class="loader"></div>';
 
     }else{}
