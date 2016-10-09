@@ -13,7 +13,7 @@ class Match {
     function getMatch() {
         //ob_clean();
         $idequipe = $_POST['idequipe2'];
-        $url = "http://stats.nba.com/stats/teamgamelog?LeagueID=00&Season=2015-16&SeasonType=Regular+Season&TeamID=" . $this->idequipe;
+        $url = "http://stats.nba.com/stats/teamgamelog?LeagueID=00&Season=2016-17&SeasonType=Regular+Season&TeamID=" . $this->idequipe;
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (X11; Linux x86');
        
