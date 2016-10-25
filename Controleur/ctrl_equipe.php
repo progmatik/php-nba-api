@@ -98,7 +98,8 @@ class ControlerEquipe {
         $count = count($tab['resultSets'][$nbr]['rowSet']); //Compte le nombre dequipe dans la conference est
         $equipe_AA = array();
         for ($i = 0; $i < $count; $i++) {
-        $controlerequipe = new ControlerEquipe();
+		//tester supprimer ligne 102 PUIS REMPLACER TOUT $controlerequipe PAR THIS ainsi que ligne 114
+            $controlerequipe = new ControlerEquipe();
 
             $equipe_AA[$i] = $tab['resultSets'][$nbr]['rowSet'][$i]; //recupere dans un tableau les donnée de chaque equipe de la conférence est
             
@@ -125,8 +126,4 @@ class ControlerEquipe {
     }
 
 }
-
-//Instanciation + appel de la fonction controlleur Equipe
-
-//$controlerequipe->getControlerEquipe($tableauobjet);
 
