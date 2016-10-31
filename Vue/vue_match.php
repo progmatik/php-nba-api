@@ -1,9 +1,9 @@
 <?php
 
 class VueMatch{
-    
+
     function getVueMatch($ptableauobjet){
-        
+
 $renderhtml = '<table id="matchs" style="width:75%;border-collapse:collapse;border:0px;">' .
  '<tr class="menuequipe">' .
  '<td style="width:20%;text-align:center" onmouseover="this.style.backgroundColor=\'#aaaaaa\'" onmouseout="this.style.backgroundColor=\'' . $color . '\'" onclick="recoi_equipe(' . $_POST['idequipe2'] . ')">Joueurs</td>' .
@@ -19,23 +19,23 @@ $renderhtml = '<table id="matchs" style="width:75%;border-collapse:collapse;bord
  '</tr>' .
  '<tr id="filtre">' .
  '<td style="text-align: center;width:20%"></td>' .
- '<td style="text-align: center;width:20%"><input type="text" size="13" id="rechequi" onkeyup="filtrer(this.value,\'' . $_POST['idequipe2'] . '\')"/></td>' .
+ '<td style="text-align: center;width:20%"><input type="text" size="13" id="rechequi" onkeyup="filtrer2(this.value,\'' . $_POST['idequipe2'] . '\')"/></td>' .
  '<td style="text-align: center;width:10%"></td>' .
  '<td style="text-align: center;width:20%"></td>' .
  '</tr></table>';
 $i = 1;
 //$count2 = count($tableau);
 $renderhtml .= '<table id="info2" style="width:75%;border-collapse:collapse;border:0px">';
-foreach($ptableauobjet as $match) 
-{ 
+foreach($ptableauobjet as $match)
+{
     $idgame = $match->getIdGame();
 
     if ($i % 2 == 0) {
-        
+
         $style = "background-color: white";
         $color = "white";
 
-        
+
     } else {
 
         $style = "background-color: #ddd";
@@ -62,7 +62,7 @@ foreach($ptableauobjet as $match)
     '<td style="width:10%;text-align:center;background-color:' . $couleur . '">' . $match->getWinLoose() . '</td>' . //G/P
     '<td id="' . $element . '" style="width:20%;text-align:center">' . $match->getPoint() . '</td>' . //Points
     '</tr>';
-    
+
 
     $renderhtml .= '<tr><div id="oModal" class="cModal" >
   <div id="ttmodal">
