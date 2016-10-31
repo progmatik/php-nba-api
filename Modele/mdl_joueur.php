@@ -10,7 +10,7 @@ class Joueur {
     public function getJoueur() {
         header("Access-Control-Allow-Origin: *");
 
-        $url1 = "http://stats.nba.com/stats/commonteamroster?LeagueID=00&Season=2015-16&TeamID=" . $this->idequipe;
+        $url1 = "http://stats.nba.com/stats/commonteamroster?LeagueID=00&Season=2016-17&TeamID=" . $this->idequipe;
 
         $ch1 = curl_init($url1);
         curl_setopt($ch1, CURLOPT_USERAGENT, 'Mozilla/5.0 (X11; Linux x86');
